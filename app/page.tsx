@@ -9,6 +9,7 @@ import { BudgetOverview } from "@/components/budget-overview";
 import { BudgetComparison } from "@/components/budget-comparison";
 import { SpendingInsights } from "@/components/spending-insights";
 import { useState } from "react";
+import { CATEGORIES } from "@/lib/constants";
 
 export type Transaction = {
   id: string;
@@ -22,17 +23,6 @@ export type Budget = {
   category: string;
   amount: number;
 };
-
-export const CATEGORIES = [
-  "Food",
-  "Transportation",
-  "Housing",
-  "Entertainment",
-  "Shopping",
-  "Healthcare",
-  "Education",
-  "Other",
-];
 
 export default function Home() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);

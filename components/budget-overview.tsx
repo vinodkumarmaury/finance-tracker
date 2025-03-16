@@ -1,7 +1,8 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Transaction, Budget, CATEGORIES } from "@/app/page";
+import { Transaction, Budget } from "@/app/page";
+import { CATEGORIES } from "@/lib/constants"; 
 import { Input } from "@/components/ui/input";
 import {
   Table,
